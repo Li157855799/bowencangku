@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="Avatar">
+  <defs>
+    <linearGradient id="bg" x1="36" y1="30" x2="204" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4DE7FF"/>
+      <stop offset="0.48" stop-color="#5F8CFF"/>
+      <stop offset="1" stop-color="#FF5FD7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(78 62) rotate(49) scale(176)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" rx="120" fill="#061019"/>
+  <rect x="9" y="9" width="222" height="222" rx="111" fill="url(#bg)" opacity="0.88"/>
+  <rect x="9" y="9" width="222" height="222" rx="111" fill="url(#glow)"/>
+  <circle cx="120" cy="92" r="43" fill="#EAF8FF"/>
+  <path d="M48 204c10-42 38-67 72-67s62 25 72 67c-18 14-42 22-72 22s-54-8-72-22Z" fill="#EAF8FF"/>
+  <path d="M74 78c18-33 68-36 91-4 8 11 10 28 4 41-7-22-25-37-49-37-22 0-40 14-49 35-5-12-3-25 3-35Z" fill="#07101D"/>
+  <path d="M69 203c9-23 28-36 51-36s42 13 51 36c-15 8-32 12-51 12s-36-4-51-12Z" fill="#07101D" opacity="0.22"/>
+</svg>
