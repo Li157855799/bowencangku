@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人主页 | Tech Profile</title>
+    <meta
+      name="description"
+      content="一个现代化深色科技风个人主页，包含头像、简介、联系方式和社交媒体入口。"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <main class="page-shell">
+      <section class="profile-panel" aria-label="个人主页">
+        <div class="avatar-wrap">
+          <div class="avatar-ring" aria-hidden="true"></div>
+          <img
+            class="avatar"
+            src="asserts/avatar.png"
+            alt="个人头像"
+            width="180"
+            height="180"
+          />
+          <span class="status-badge"><span class="status-dot"></span>Available</span>
+        </div>
+
+        <div class="intro">
+          <p class="eyebrow">Digital Creator / Frontend Explorer</p>
+          <h1>你好，我是 <span class="typing-wrap"><span class="typing-name" data-text="李博文"></span><span class="typing-cursor">|</span></span></h1>
+          <p class="bio">
+            专注于构建现代化 Web 体验，喜欢把清晰的信息架构、顺滑的交互和具有科技感的视觉设计结合起来。
+            目前关注前端工程、AI 产品体验与个人品牌建设。
+          </p>
+        </div>
+      </section>
+
+      <section class="video-showcase" aria-label="AIGC 作品展示">
+        <div class="section-title">作品</div>
+        <div class="video-grid">
+          <div class="video-card" data-video="aigc/video-539173-1780889785403.mp4" data-title="AIGC 短片">
+            <div class="video-glow"></div>
+            <video class="video-player" src="aigc/video-539173-1780889785403.mp4" muted playsinline preload="metadata"></video>
+            <div class="video-overlay">
+              <span class="play-icon">▶</span>
+              <span class="video-label">AIGC 短片</span>
+            </div>
+          </div>
+          <div class="video-card" data-video="aigc/雨夜迈巴赫.mp4" data-title="雨夜迈巴赫">
+            <div class="video-glow"></div>
+            <video class="video-player" src="aigc/雨夜迈巴赫.mp4" muted playsinline preload="metadata"></video>
+            <div class="video-overlay">
+              <span class="play-icon">▶</span>
+              <span class="video-label">雨夜迈巴赫</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="carousel" aria-label="个人信息卡片">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+
+            <article class="card card-stats">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <h3 class="card-title">数据亮点</h3>
+                <div class="stat-grid">
+                  <div class="stat-item">
+                    <strong>6+</strong>
+                    <span>Years Experience</span>
+                  </div>
+                  <div class="stat-item">
+                    <strong>28</strong>
+                    <span>Projects Done</span>
+                  </div>
+                  <div class="stat-item">
+                    <strong>24/7</strong>
+                    <span>Always Online</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-contact">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <h3 class="card-title">联系方式</h3>
+                <ul class="contact-list">
+                  <li>
+                    <span class="contact-icon">@</span>
+                    <a href="mailto:157855799@qq.com">157855799@qq.com</a>
+                  </li>
+                  <li>
+                    <span class="contact-icon">#</span>
+                    <a href="tel:+8613903227162">+86 139 0322 7162</a>
+                  </li>
+                  <li>
+                    <span class="contact-icon">⌖</span>
+                    <span>石家庄, China</span>
+                  </li>
+                  <li>
+                    <span class="contact-icon">↓</span>
+                    <a href="asserts/d7b59eccaf25d2bae19cbc27cdc3abf4.pdf" download class="resume-link">下载简历 PDF</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card card-social">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <h3 class="card-title">社交媒体</h3>
+                <div class="social-grid">
+                  <a href="https://github.com/" target="_blank" rel="noreferrer" class="social-btn">
+                    <span class="social-icon">⌘</span>
+                    <span class="social-name">GitHub</span>
+                    <span class="social-arrow">↗</span>
+                  </a>
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social-btn">
+                    <span class="social-icon">◆</span>
+                    <span class="social-name">LinkedIn</span>
+                    <span class="social-arrow">↗</span>
+                  </a>
+                  <a href="https://x.com/" target="_blank" rel="noreferrer" class="social-btn">
+                    <span class="social-icon">✦</span>
+                    <span class="social-name">X / Twitter</span>
+                    <span class="social-arrow">↗</span>
+                  </a>
+                  <a href="https://dribbble.com/" target="_blank" rel="noreferrer" class="social-btn">
+                    <span class="social-icon">◉</span>
+                    <span class="social-name">Dribbble</span>
+                    <span class="social-arrow">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-projects">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <h3 class="card-title">精选项目</h3>
+                <div class="project-list">
+                  <a href="#" class="project-item">
+                    <div class="project-header">
+                      <span class="project-name">AI 绘画工作台</span>
+                      <span class="project-tag">React + SD</span>
+                    </div>
+                    <p class="project-desc">基于 Stable Diffusion 的智能绘画辅助工具，支持 Prompt 优化与风格迁移</p>
+                  </a>
+                  <a href="#" class="project-item">
+                    <div class="project-header">
+                      <span class="project-name">组件星系</span>
+                      <span class="project-tag">Vue + TS</span>
+                    </div>
+                    <p class="project-desc">开源 UI 组件库，内置 30+ 科技风组件与主题系统</p>
+                  </a>
+                  <a href="#" class="project-item">
+                    <div class="project-header">
+                      <span class="project-name">数据脉搏</span>
+                      <span class="project-tag">Next.js</span>
+                    </div>
+                    <p class="project-desc">实时数据可视化仪表盘，支持多维度数据流监控</p>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card-skills">
+              <div class="card-glow"></div>
+              <div class="card-inner">
+                <h3 class="card-title">技术栈</h3>
+                <div class="skill-group">
+                  <span class="skill-label">Frontend</span>
+                  <div class="skill-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Tailwind</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <span class="skill-label">AI / AIGC</span>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Stable Diffusion</span>
+                    <span class="skill-tag">ComfyUI</span>
+                    <span class="skill-tag">Midjourney</span>
+                    <span class="skill-tag">LLM Apps</span>
+                  </div>
+                </div>
+                <div class="skill-group">
+                  <span class="skill-label">Tools</span>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Vercel</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          </div>
+          <div class="carousel-dots"></div>
+          <div class="swipe-hint"><span>← 左右滑动浏览 →</span></div>
+        </div>
+    </main>
+
+    <div class="video-lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop"></div>
+      <button class="lightbox-close" aria-label="关闭">✕</button>
+      <div class="lightbox-body">
+        <span class="lightbox-title"></span>
+        <video class="lightbox-video" controls loop playsinline></video>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
